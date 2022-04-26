@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'secondapp';
+  public total : number; 
+  constructor() {
+    this.total = 0;
+  }
+
+  getTotal(data: any): void {
+    this.total = data.first+data.second;
+  }
+
 }
